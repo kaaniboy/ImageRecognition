@@ -69,6 +69,7 @@ public class WebcamPanel extends JPanel {
 		public void actionPerformed(ActionEvent event) {
 			try {
 				grabbedImage = grabberConverter.convert(grabber.grab());
+				
 				repaint();
 			} catch (Exception e) {
 				System.out.println("Exception in BackgroundImageGrabber");
